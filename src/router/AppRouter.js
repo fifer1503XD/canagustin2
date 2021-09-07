@@ -30,20 +30,20 @@ export const AppRouter = () => {
         <Router>
             <div>
                 <Switch>
-
-                    <PublicRoute 
-                        exact 
-                        path="/login" 
-                        component={ LoginScreen }
-                        isAuthenticated={ !!uid }
-                    />
-                     <PublicRoute 
+                <PublicRoute 
                         exact 
                         path="/register" 
                         component={ RegisterScreen }
                         isAuthenticated={ !!uid }
                     />
                 
+                    <PublicRoute 
+                        exact 
+                        path="/login" 
+                        component={ LoginScreen }
+                        isAuthenticated={ !!uid }
+                    />
+                   
                     <PrivateRoute 
                         exact 
                         path={`/`}
