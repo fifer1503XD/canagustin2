@@ -1,0 +1,55 @@
+.containerDescription{
+  margin-top: 3%;
+  border-top: 8px solid;
+  border-bottom: 8px solid;
+  display: flex;
+  padding: 3%;
+}
+.containerImage{
+  width: 50%;
+}
+.containerInfo{
+  width: 50%;
+}
+.infoPublication{
+  margin-top: 15%;
+}
+.can{
+  height: 500px;
+  width: 700px;
+  float: right;
+  border: 10px solid rgb(255, 255, 255);
+}
+
+h1{
+    color:rgb(2, 71, 2);
+    font-size: 50px;
+  }
+
+
+
+.lee{
+    background: linear-gradient(to bottom, rgb(100, 184, 4), white);
+    color:black;
+    border-radius: 15px;
+    height: 40px;
+    width: 200px;
+
+}
+
+  h1 {
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  p{
+      font-size: 22px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
+  }
+  
+  h3 {
+    font-weight: 300;
+  }
+  
+

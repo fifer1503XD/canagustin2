@@ -1,0 +1,88 @@
+.headerChat{
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #00c2cb;
+    height: 20%;
+}
+
+.containerChat{
+    border-radius: 20px;
+    padding: 0.5% ;
+    width: 350px;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(9, 23, 218);
+    padding-bottom: 1%;
+}
+.bodyChat{
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+    height: 80%;
+    background-color: beige;
+
+}
+.imgProfile{
+    border-radius: 20px;
+    height: 90%;
+}
+
+.conversation{
+    padding:0.1%;
+    border-top: solid;
+    width: 100%;
+    height: 24%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conversation:hover{
+    background-color: #b5fac7;
+}
+.chatName{
+    box-sizing: border-box;
+    width: 75%;
+    height: 20%;
+    text-align: end;
+    padding-right: 6%;
+}
+.logo{
+    border-radius: 20px;
+    height: 100%;
+    width: 18%;
+}
+.titleChat{
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.iconChat{
+    width: 5%;
+    color: white;
+}
+
+.containerTitleChat{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mensajeParticipant{
+    padding: 2%;
+    border-radius: 20px;
+    width: 50%;
+    background-color: rgb(130, 238, 130);
+    text-align: sta
+}
+
+.mensajeCreator{
+    padding: 2%;
+    border-radius: 20px;
+    margin-left: 50%;
+    background-color: rgb(136, 173, 230);
+    text-align: end;
+}
