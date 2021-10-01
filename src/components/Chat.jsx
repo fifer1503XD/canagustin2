@@ -18,7 +18,6 @@ const Chat = () => {
     const [Conver, setConver] = useState('');
     const [Visible, setVisible] = useState(false);
     const convers = useSelector(state => state.conver.dataConversations);
-
     return (
 
         <div>
@@ -39,7 +38,7 @@ const Chat = () => {
 
                     {Conver ?
                         <ConversationActive id={Conver} />
-                        : convers.map((conver) => {
+                        : convers.filter(conver=>conver.creator._id===uid || conver.participant._id===uid).map((conver) => {
                             return (
                                 <Conversation setconver={setConver} data={conver} />
                             )

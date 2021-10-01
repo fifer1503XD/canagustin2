@@ -5,7 +5,7 @@
   }
   
   body {
-    background-color: #b5fac7;
+    background-color: #f5f5f5;
   }
   
   .pages {
@@ -18,7 +18,7 @@
   }
   
   .navbar {
-    background-color: #1f5156;
+    background-color: #0cd5de;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@
   }
   
   .nav-logo {
-    color: #f5b921;
+    color: #fdfdfd;
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
@@ -82,7 +82,7 @@
   
   .nav-item:hover:after {
     width: 100%;
-    background: #ffdd40;
+    background: #fff;
   }
   
  
@@ -112,7 +112,7 @@
       z-index: 1;
     }
     .nav-item .active {
-      color: #ffdd40;
+      color: #fff;
       border: none;
     }
     .nav-links {
@@ -129,6 +129,6 @@
       transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
-      color: #ffdd40;
+      color: #fff;
     }
   }

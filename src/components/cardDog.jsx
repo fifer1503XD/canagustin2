@@ -13,7 +13,8 @@ const CardDog = (props) => {
           <h5 className="card-title">Nombre: {name}</h5>
         </div>
       </div>
-      <img className="card-image" src={foto} alt="Logo" />
+      <div className="container-Image"> 
+      <img className="card-image"  src={foto} alt="Logo" /></div>
       <div className="card-text">Edad: {edad}</div>
       <div className="card-text">Ubicacion: {ubicacion}</div>
       <div className="card-like-bar">

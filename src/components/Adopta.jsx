@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import NewDog from "./newDog";
 import { useState } from "react";
 import PublicationDog from "./PublicationDog";
+import "./Card.css";
 const Adopta = () => {
     const [card, setcard] = useState('');
     const dataDogs = useSelector(state => state.dogs.dataDogs);
@@ -18,7 +19,7 @@ const Adopta = () => {
         />
         </div>) 
         :
-        ( <div className="contanerDogs">
+        ( <div className="containerPublication">
         {dataDogs.map((dog)=>{
             return(<CardDog setcard={setcard} info={dog}/>)
         })}
