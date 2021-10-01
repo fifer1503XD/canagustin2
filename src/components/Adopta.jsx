@@ -2,15 +2,29 @@ import CardDog from "./cardDog";
 import { useSelector } from "react-redux";
 import Navbar from "./Navbar";
 import NewDog from "./newDog";
+import { useState } from "react";
+import PublicationDog from "./PublicationDog";
 const Adopta = () => {
+    const [card, setcard] = useState('');
     const dataDogs = useSelector(state => state.dogs.dataDogs);
     return ( <div>
         <Navbar/>
-        <div className="contanerDogs">
+        
+       
+        {card ? 
+        
+        (<div> <PublicationDog
+        info={card}
+        />
+        </div>) 
+        :
+        ( <div className="contanerDogs">
         {dataDogs.map((dog)=>{
-            return(<CardDog info={dog}/>)
+            return(<CardDog setcard={setcard} info={dog}/>)
         })}
         </div>
+        ) 
+        }
         
         <NewDog/>
         

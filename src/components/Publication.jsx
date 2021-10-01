@@ -1,7 +1,7 @@
 import "./blogcanagustin.css";
 const Publication = (props) => {
     console.log(props)
-    const { author, date, image, description,content, isLiked, like,title } = props.information
+    const {  image, content,title } = props.information
     return (
         <div>
             

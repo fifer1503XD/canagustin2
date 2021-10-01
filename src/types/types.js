@@ -10,6 +10,10 @@ export const types = {
     authComponent: '[auth] Component',
 
     DogsCargarData:'[dogs]CargarData',
-    DogsAgregarNuevo:'[dogs]DogsAgregarNuevo'
+    DogsAgregarNuevo:'[dogs]DogsAgregarNuevo',
+
+    ConversationsCargarData:'[conver]CargarConversations',
+    ConversationsAddMessage:'[conver]AddMessage',
+    ConversationMessage:'[conver]Message'
 
 }

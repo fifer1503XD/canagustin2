@@ -9,8 +9,6 @@ export const GetDataDogs = (  ) => {
     return async( dispatch ) => {
         const resp = await fetchSinToken( 'dogs/', {}, 'GET' );
         const {perros} = await resp.json();
-        
-        
         if( perros ) {
             dispatch( Datadogs(
                perros

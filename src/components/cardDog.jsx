@@ -1,53 +1,26 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 140,
-  },
-});
 
 const CardDog = (props) => {
-  const classes = useStyles()
+
   const {name,edad,propietario,ubicacion,foto}=props.info
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={foto}
-          title={name}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-          <p>Nombre:{name}</p>
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          <p>Edad:{edad}</p>
-            <p>Nombre propietario:{propietario}</p>
-            <p>Ubicacion:{ubicacion}</p>
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Adoptar
-        </Button>
-        <Button size="small" color="primary">
-          Contacto propietario
-        </Button>
-      </CardActions>
-    </Card>
+    <div className="card col-sm-12" onClick={()=>props.setcard(props.info)}>
+      <div className="card-header">
+        <div className="profile">
+          <span className="letter">{propietario[0]}</span>
+        </div>
+        <div className="card-title-group">
+          <h5 className="card-title">Nombre: {name}</h5>
+        </div>
+      </div>
+      <img className="card-image" src={foto} alt="Logo" />
+      <div className="card-text">Edad: {edad}</div>
+      <div className="card-text">Ubicacion: {ubicacion}</div>
+      <div className="card-like-bar">
+        
+      </div>
+    </div>
+    
   );
 }
 
