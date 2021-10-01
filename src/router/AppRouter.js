@@ -11,7 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { PublicRoute } from './PublicRoute';
 import { PrivateRoute } from './PrivateRoute';
 import LoginScreen from '../components/LoginScreen';
-import RegisterScreen from '../components/RegisterScreem';
+
 
 export const AppRouter = () => {
 
@@ -30,16 +30,9 @@ export const AppRouter = () => {
         <Router>
             <div>
                 <Switch>
-                <PublicRoute 
-                        exact 
-                        path="/register" 
-                        component={ RegisterScreen }
-                        isAuthenticated={ !!uid }
-                    />
-                
                     <PublicRoute 
                         exact 
-                        path="/login" 
+                        path="/" 
                         component={ LoginScreen }
                         isAuthenticated={ !!uid }
                     />

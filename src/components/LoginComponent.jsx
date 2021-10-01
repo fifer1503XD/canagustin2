@@ -12,8 +12,9 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import { StartLogin } from '../actions/auth';
+import { ChangeComponent, StartLogin } from '../actions/auth';
 import { useDispatch } from 'react-redux';
+import { Register } from './RegisterComponent';
 
 
 function Copyright() {
@@ -126,8 +127,8 @@ const handlePassword = (event) => {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="/register" variant="body2">
-                {'No tienes cuenta, Registrate'}
+              <Link onClick={()=> props.wantRegister(true)} variant="body2">
+                No tienes cuenta, Registrate
               </Link>
             </Grid>
           </Grid>
