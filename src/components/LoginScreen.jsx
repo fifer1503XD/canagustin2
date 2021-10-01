@@ -20,6 +20,7 @@ const LoginScreen =()=> {
         
        
       }
+      {/* <Login/> */}
       
     </div>
   );

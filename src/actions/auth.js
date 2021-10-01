@@ -12,7 +12,6 @@ export const StartLogin = ( email,password ) => {
             if( body.ok ) {
                 localStorage.setItem('token', body.token );
                 localStorage.setItem('token-init-date', new Date().getTime() );
-    
                 dispatch( login({
                     uid: body.uid,
                     name: body.name+" "+body.lastName
